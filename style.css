@@ -1,0 +1,206 @@
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #0f172a;
+    background: linear-gradient(135deg, #fce4ec, #ffffff, #e3f2fd);
+    background-size: 400% 400%;
+    animation: gradientBG 12s ease infinite;
+}
+
+/* animated gradient background */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* =========================
+   NAVBAR (GLASS EFFECT)
+========================= */
+
+.navbar {
+    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 12px;
+    margin-top: 10px;
+    padding: 15px 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.navbar-brand h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #e91e63;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   HERO SECTION (MODERN UI)
+========================= */
+
+.hero {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3.2rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    transition: 0.4s ease;
+}
+
+.hero h1:hover {
+    color: #e91e63;
+    transform: scale(1.05);
+}
+
+.skills li {
+    font-weight: 500;
+    color: #475569;
+}
+
+/* CTA BUTTON */
+.btn-outline-dark {
+    border: 2px solid #e91e63;
+    color: #e91e63;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: 0.4s ease;
+}
+
+.btn-outline-dark:hover {
+    background: #e91e63;
+    color: white;
+    transform: scale(1.08);
+    box-shadow: 0 10px 25px rgba(233, 30, 99, 0.3);
+}
+
+/* =========================
+   ABOUT SECTION (CLEAN CARD STYLE)
+========================= */
+
+.about {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    margin: 30px;
+    padding: 60px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.about h1 {
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* =========================
+   PROJECTS (MODERN CARDS)
+========================= */
+
+.projects h2 {
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.4s ease;
+    background: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.card-img-top {
+    height: 180px;
+    object-fit: cover;
+    transition: 0.4s ease;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+.card-body h5 {
+    font-weight: 700;
+}
+
+.card-body h6 {
+    color: #64748b;
+}
+
+/* PROJECT BUTTON */
+.btn-outline-primary {
+    border-color: #e91e63;
+    color: #e91e63;
+    border-radius: 25px;
+    transition: 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+    background: #e91e63;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* =========================
+   CONTACT SECTION (CLEAN UI)
+========================= */
+
+.contact {
+    background: rgba(255,255,255,0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    margin: 30px;
+    padding: 60px;
+}
+
+.input-group-text {
+    background: #e91e63;
+    color: white;
+    border: none;
+}
+
+.form-control {
+    border-radius: 10px;
+    padding: 12px;
+}
+
+/* =========================
+   FOOTER (PRO LOOK)
+========================= */
+
+footer {
+    background: #0f172a;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
