@@ -1,168 +1,476 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <meta name="description"
+        content="Ayushi — UI/UX Designer and Frontend Developer portfolio.">
+
+    <title>Ayushi — UI/UX Designer & Frontend Developer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
 
-<!-- Header -->
-<header>
-    <div class="container mb-5">
-        <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="#">
-                <h1 class="m-0">AYUSHI-PORTFOLIO</h1>
+<div class="site-wrapper">
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <header class="navbar-wrapper">
+        <nav class="navbar container">
+
+            <a href="#home" class="logo">
+                AYU<span>.</span>
             </a>
 
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#project">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
+            <div class="nav-links">
+                <a href="#work">Work</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <a href="#contact" class="nav-button">
+                Let's talk <span>↗</span>
+            </a>
+
         </nav>
-    </div>
-</header>
+    </header>
 
-<!-- Hero Section -->
-<section id="home" class="hero">
-    <div class="container mb-5 text-center">
 
-        <h1>Hi, I am AYUSHI</h1>
+    <!-- ================= HERO ================= -->
 
-        <ul class="skills list-unstyled d-flex gap-3 justify-content-center">
-            <li>FRONTEND DEVELOPER</li>
-            <li>CSS</li>
-            <li>HTML</li>
-        </ul>
+    <main id="home">
 
-        <a href="https://github.com/designwithAYU" target="_blank" class="btn btn-outline-dark mt-3">
-            My Work
-        </a>
+        <section class="hero container">
 
-    </div>
-</section>
+            <div class="hero-content">
 
-<!-- About Section -->
-<section id="about" class="about py-5">
-    <div class="container">
+                <p class="eyebrow">
+                    UI/UX DESIGNER · FRONTEND DEVELOPER
+                </p>
 
-        <h1 class="mb-4 text-center">About</h1>
+                <h1>
+                    Hello,<br>
+                    <em>I'm Ayushi.</em>
+                </h1>
 
-        <p>
-            I am a frontend web developer focused on building responsive and user-friendly websites using HTML, CSS, and Bootstrap. I enjoy creating clean and modern UI designs, and I am continuously improving my skills by working on real projects like personal portfolio websites. My goal is to become a skilled full-stack developer and build impactful web applications.
-        </p>
+                <p class="hero-description">
+                    I design thoughtful digital experiences and build
+                    clean, responsive interfaces that are simple,
+                    useful and easy to use.
+                </p>
 
-    </div>
-</section>
+                <div class="hero-buttons">
 
-<!-- Projects Section -->
-<section id="project" class="projects py-5">
-    <div class="container">
+                    <a href="#work" class="primary-button">
+                        Explore my work
+                        <span>↓</span>
+                    </a>
 
-        <h2 class="mb-4 text-center">PROJECTS</h2>
+                    <a
+                        href="https://github.com/designwithAYU"
+                        target="_blank"
+                        class="text-link">
+                        GitHub ↗
+                    </a>
 
-        <div class="row g-4">
-
-            <!-- Project 1 -->
-            <div class="col-md-3">
-                <div class="card h-100">
-                    <img class="card-img-top" src="images/weather.png" alt="Weather App">
-                    <div class="card-body">
-                        <h5>PROJECT-1</h5>
-                        <h6>WEATHER APP</h6>
-                        <a href="https://designwithayu.github.io/weather-web/" class="btn btn-outline-primary mt-2">
-                            Live Demo
-                        </a>
-                    </div>
                 </div>
+
             </div>
 
-            <!-- Project 2 -->
-            <div class="col-md-3">
-                <div class="card h-100">
-                    <img class="card-img-top" src="images/portfolio.png" alt="Portfolio">
-                    <div class="card-body">
-                        <h5>PROJECT-2</h5>
-                        <h6>MY PORTFOLIO</h6>
-                        <a href="#" class="btn btn-outline-primary mt-2">
-                            Live Demo
-                        </a>
-                    </div>
+
+            <div class="hero-status">
+
+                <span class="status-dot"></span>
+
+                <p>
+                    Currently learning,<br>
+                    designing & building.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= MARQUEE ================= -->
+
+        <section class="marquee">
+
+            <div class="marquee-content">
+                DESIGN · DEVELOP · ITERATE · DESIGN · DEVELOP · ITERATE ·
+                DESIGN · DEVELOP · ITERATE ·
+            </div>
+
+        </section>
+
+
+        <!-- ================= WORK ================= -->
+
+        <section id="work" class="work container section">
+
+            <div class="section-header">
+
+                <div>
+                    <p class="eyebrow">
+                        SELECTED WORK
+                    </p>
                 </div>
+
+                <p class="section-description">
+                    A selection of projects where I explored
+                    design, development and user experience.
+                </p>
+
             </div>
 
-            <!-- Project 3 -->
-            <div class="col-md-3">
-                <div class="card h-100">
-                    <img class="card-img-top" src="images/e-commerce.jpg" alt="E-commerce">
-                    <div class="card-body">
-                        <h5>PROJECT-3</h5>
-                        <h6>E-COMMERCE</h6>
-                        <a href="https://designwithayu.github.io/e-commerce/" class="btn btn-outline-primary mt-2">
-                            Live Demo
-                        </a>
+
+            <div class="projects">
+
+
+                <!-- PROJECT 01 -->
+
+                <article class="project project-featured">
+
+                    <a
+                        href="https://github.com/designwithAYU/Ledgerly-AI-based-Expense-Tracker"
+                        target="_blank"
+                        class="project-image project-pink">
+
+                        <img
+                            src="images/calculator.png"
+                            alt="Ledgerly AI Expense Tracker">
+
+                        <span class="project-link">
+                            View project ↗
+                        </span>
+
+                    </a>
+
+
+                    <div class="project-info">
+
+                        <div>
+
+                            <p class="project-category">
+                                01 / PRODUCT DESIGN
+                            </p>
+
+                            <h2>
+                                Ledgerly
+                            </h2>
+
+                        </div>
+
+                        <p>
+                            An AI-powered expense tracking experience
+                            designed to make personal finance easier
+                            to understand and manage.
+                        </p>
+
                     </div>
-                </div>
-            </div>
 
-            <!-- Project 4 -->
-            <div class="col-md-3">
-                <div class="card h-100">
-                    <img class="card-img-top" src="images/calculator.png" alt="Calculator">
-                    <div class="card-body">
-                        <h5>PROJECT-4</h5>
-                        <h6>EXPENSE TRACKER</h6>
-                        <a href="https://github.com/designwithAYU/Ledgerly-AI-based-Expense-Tracker" class="btn btn-outline-primary mt-2">
-                            Live Demo
-                        </a>
+                </article>
+
+
+                <!-- PROJECT 02 -->
+
+                <article class="project">
+
+                    <a
+                        href="https://designwithayu.github.io/weather-web/"
+                        target="_blank"
+                        class="project-image project-blue">
+
+                        <img
+                            src="images/weather.png"
+                            alt="Weather App">
+
+                        <span class="project-link">
+                            View project ↗
+                        </span>
+
+                    </a>
+
+
+                    <div class="project-info">
+
+                        <div>
+
+                            <p class="project-category">
+                                02 / WEB DESIGN
+                            </p>
+
+                            <h2>
+                                Weather App
+                            </h2>
+
+                        </div>
+
+                        <p>
+                            A responsive weather interface focused
+                            on clear information hierarchy and a
+                            straightforward user experience.
+                        </p>
+
                     </div>
+
+                </article>
+
+
+                <!-- PROJECT 03 -->
+
+                <article class="project">
+
+                    <a
+                        href="https://designwithayu.github.io/e-commerce/"
+                        target="_blank"
+                        class="project-image project-neutral">
+
+                        <img
+                            src="images/e-commerce.jpg"
+                            alt="E-commerce Website">
+
+                        <span class="project-link">
+                            View project ↗
+                        </span>
+
+                    </a>
+
+
+                    <div class="project-info">
+
+                        <div>
+
+                            <p class="project-category">
+                                03 / WEB DESIGN
+                            </p>
+
+                            <h2>
+                                E-commerce
+                            </h2>
+
+                        </div>
+
+                        <p>
+                            A responsive shopping interface designed
+                            around simple navigation, product discovery
+                            and clean visual hierarchy.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT 04 -->
+
+                <article class="project project-wide">
+
+                    <a
+                        href="https://designwithayu.github.io/portfolio/"
+                        target="_blank"
+                        class="project-image project-lilac">
+
+                        <img
+                            src="images/portfolio.png"
+                            alt="Previous Portfolio Website">
+
+                        <span class="project-link">
+                            View project ↗
+                        </span>
+
+                    </a>
+
+
+                    <div class="project-info">
+
+                        <div>
+
+                            <p class="project-category">
+                                04 / PERSONAL PROJECT
+                            </p>
+
+                            <h2>
+                                Portfolio
+                            </h2>
+
+                        </div>
+
+                        <p>
+                            My previous portfolio — redesigned into
+                            a more intentional UI/UX-focused experience.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section id="about" class="about section">
+
+            <div class="container about-grid">
+
+                <div>
+
+                    <p class="eyebrow">
+                        A LITTLE ABOUT ME
+                    </p>
+
                 </div>
+
+
+                <div class="about-content">
+
+                    <h2>
+                        I like making digital products feel
+                        <em>simple, useful and human.</em>
+                    </h2>
+
+                    <p>
+                        I'm a Computer Science student exploring
+                        UI/UX design and frontend development.
+                        I enjoy taking an idea from rough structure
+                        to a polished interface — thinking about
+                        users, hierarchy, interaction and the small
+                        details that make a product feel complete.
+                    </p>
+
+                    <p>
+                        My toolkit includes Figma, HTML, CSS,
+                        JavaScript, Bootstrap and React, with a
+                        growing interest in product design and
+                        design systems.
+                    </p>
+
+                    <a
+                        href="https://github.com/designwithAYU"
+                        target="_blank"
+                        class="text-link">
+                        See my GitHub ↗
+                    </a>
+
+                </div>
+
             </div>
 
-        </div>
-    </div>
-</section>
+        </section>
 
-<!-- Contact Section -->
-<section id="contact" class="contact py-5">
-    <div class="container">
 
-        <h2 class="text-center mb-4">Contact Me</h2>
+        <!-- ================= SKILLS ================= -->
 
-        <form>
-            <div class="mb-3 input-group">
-                <input type="email" class="form-control" placeholder="Enter your email">
-                <span class="input-group-text">Email</span>
+        <section id="skills" class="skills container section">
+
+            <div class="section-header">
+
+                <p class="eyebrow">
+                    WHAT I WORK WITH
+                </p>
+
             </div>
 
-            <div class="mb-3 input-group">
-                <input type="text" class="form-control" placeholder="Enter your message">
-                <span class="input-group-text">Message</span>
+
+            <div class="skills-list">
+
+                <span>UI / UX Design</span>
+                <span>Wireframing</span>
+                <span>Prototyping</span>
+                <span>Figma</span>
+                <span>Responsive Design</span>
+                <span>Design Systems</span>
+                <span>HTML & CSS</span>
+                <span>JavaScript</span>
+                <span>Bootstrap</span>
+                <span>React</span>
+
             </div>
 
-            <button value="submit" class="btn btn-outline-dark text-center">SEND</button>
-        </form>
+        </section>
 
-    </div>
-</section>
 
-<!-- Footer -->
-<footer class="bg-dark text-white text-center py-3">
-    <p class="mb-0">Made by me</p>
-</footer>
+        <!-- ================= CONTACT ================= -->
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <section id="contact" class="contact section">
+
+            <div class="container contact-content">
+
+                <p class="eyebrow">
+                    HAVE A PROJECT IN MIND?
+                </p>
+
+                <h2>
+                    Let's make something
+                    <br>
+                    <em>worth remembering.</em>
+                </h2>
+
+
+                <a
+                    href="mailto:your-email@example.com"
+                    class="contact-email">
+
+                    your-email@example.com
+
+                    <span>↗</span>
+
+                </a>
+
+
+                <div class="social-links">
+
+                    <a
+                        href="https://github.com/designwithAYU"
+                        target="_blank">
+                        GitHub
+                    </a>
+
+                    <a
+                        href="https://www.linkedin.com"
+                        target="_blank">
+                        LinkedIn
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer container">
+
+        <span>
+            © 2026 Ayushi
+        </span>
+
+        <span>
+            Designed & built with curiosity.
+        </span>
+
+    </footer>
+
+</div>
 
 </body>
 </html>
