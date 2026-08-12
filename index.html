@@ -1,317 +1,729 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
+    <!-- =====================================================
+         BASIC META
+    ====================================================== -->
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-        content="Ayushi — UI/UX Designer and Frontend Developer portfolio.">
+          content="Ayushi — UI/UX Designer and Frontend Developer portfolio.">
+
+    <meta name="author"
+          content="Ayushi">
+
+    <meta name="theme-color"
+          content="#F7F5F1">
+
+
+    <!-- =====================================================
+         PAGE TITLE
+    ====================================================== -->
 
     <title>Ayushi — UI/UX Designer & Frontend Developer</title>
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- =====================================================
+         FONTS
+    ====================================================== -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
 
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+
+    <!-- =====================================================
+         CSS
+    ====================================================== -->
+
+    <link rel="stylesheet"
+          href="style.css">
+
 </head>
+
 
 <body>
 
+
+<!-- =========================================================
+     PAGE WRAPPER
+========================================================= -->
+
 <div class="site-wrapper">
 
-    <!-- ================= NAVIGATION ================= -->
 
-    <header class="navbar-wrapper">
+    <!-- =====================================================
+         NAVIGATION
+    ====================================================== -->
+
+    <header class="site-header">
+
         <nav class="navbar container">
 
-            <a href="#home" class="logo">
+            <!-- Logo -->
+
+            <a href="#home"
+               class="logo"
+               aria-label="Ayushi Home">
+
                 AYU<span>.</span>
+
             </a>
+
+
+            <!-- Desktop Navigation -->
 
             <div class="nav-links">
-                <a href="#work">Work</a>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#contact">Contact</a>
+
+                <a href="#work">
+                    Work
+                </a>
+
+                <a href="#about">
+                    About
+                </a>
+
+                <a href="#process">
+                    Process
+                </a>
+
+                <a href="#resume">
+                    Resume
+                </a>
+
             </div>
 
-            <a href="#contact" class="nav-button">
-                Let's talk <span>↗</span>
+
+            <!-- Resume CTA -->
+
+            <a href="#resume"
+               class="nav-cta">
+
+                Resume
+                <span>↗</span>
+
             </a>
 
+
+            <!-- Mobile Menu Button -->
+
+            <button
+                class="menu-toggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false">
+
+                <span></span>
+                <span></span>
+
+            </button>
+
         </nav>
+
+
+        <!-- Mobile Navigation -->
+
+        <div class="mobile-menu">
+
+            <a href="#work">
+                Work
+            </a>
+
+            <a href="#about">
+                About
+            </a>
+
+            <a href="#process">
+                Process
+            </a>
+
+            <a href="#resume">
+                Resume
+            </a>
+
+        </div>
+
     </header>
 
 
-    <!-- ================= HERO ================= -->
 
-    <main id="home">
+    <!-- =====================================================
+         MAIN CONTENT
+    ====================================================== -->
 
-        <section class="hero container">
-
-            <div class="hero-content">
-
-                <p class="eyebrow">
-                    UI/UX DESIGNER · FRONTEND DEVELOPER
-                </p>
-
-                <h1>
-                    Hello,<br>
-                    <em>I'm Ayushi.</em>
-                </h1>
-
-                <p class="hero-description">
-                    I design thoughtful digital experiences and build
-                    clean, responsive interfaces that are simple,
-                    useful and easy to use.
-                </p>
-
-                <div class="hero-buttons">
-
-                    <a href="#work" class="primary-button">
-                        Explore my work
-                        <span>↓</span>
-                    </a>
-
-                    <a
-                        href="https://github.com/designwithAYU"
-                        target="_blank"
-                        class="text-link">
-                        GitHub ↗
-                    </a>
-
-                </div>
-
-            </div>
+    <main>
 
 
-            <div class="hero-status">
+        <!-- =================================================
+             HERO SECTION
+        ================================================== -->
 
-                <span class="status-dot"></span>
+        <section
+            id="home"
+            class="hero">
 
-                <p>
-                    Currently learning,<br>
-                    designing & building.
-                </p>
-
-            </div>
-
-        </section>
+            <div class="container hero-container">
 
 
-        <!-- ================= MARQUEE ================= -->
+                <!-- Hero Content -->
 
-        <section class="marquee">
-
-            <div class="marquee-content">
-                DESIGN · DEVELOP · ITERATE · DESIGN · DEVELOP · ITERATE ·
-                DESIGN · DEVELOP · ITERATE ·
-            </div>
-
-        </section>
+                <div class="hero-content">
 
 
-        <!-- ================= WORK ================= -->
+                    <!-- Eyebrow -->
 
-        <section id="work" class="work container section">
-
-            <div class="section-header">
-
-                <div>
                     <p class="eyebrow">
-                        SELECTED WORK
+
+                        UI/UX DESIGNER
+                        <span>·</span>
+                        FRONTEND DEVELOPER
+
                     </p>
+
+
+                    <!-- Main Heading -->
+
+                    <h1 class="hero-title">
+
+                        Hello,
+                        <br>
+
+                        <em>I'm Ayushi.</em>
+
+                    </h1>
+
+
+                    <!-- Hero Description -->
+
+                    <p class="hero-description">
+
+                        I design thoughtful digital experiences
+                        and build clean, responsive interfaces
+                        that are simple, useful and easy to use.
+
+                    </p>
+
+
+                    <!-- Hero Actions -->
+
+                    <div class="hero-actions">
+
+
+                        <a href="#work"
+                           class="button button-primary">
+
+                            Explore my work
+
+                            <span>↓</span>
+
+                        </a>
+
+
+                        <a href="#resume"
+                           class="text-link">
+
+                            Resume
+                            <span>↗</span>
+
+                        </a>
+
+
+                        <a
+                            href="https://github.com/designwithAYU"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-link">
+
+                            GitHub
+                            <span>↗</span>
+
+                        </a>
+
+                    </div>
+
                 </div>
 
-                <p class="section-description">
-                    A selection of projects where I explored
-                    design, development and user experience.
-                </p>
+
+                <!-- Hero Status -->
+
+                <div class="hero-status">
+
+                    <span class="status-dot"></span>
+
+                    <p>
+
+                        Currently learning,
+                        <br>
+
+                        designing & building.
+
+                    </p>
+
+                </div>
 
             </div>
 
+        </section>
 
-            <div class="projects">
 
 
-                <!-- PROJECT 01 -->
+        <!-- =================================================
+             MARQUEE
+        ================================================== -->
 
-                <article class="project project-featured">
+        <section
+            class="marquee"
+            aria-label="Design philosophy">
+
+            <div class="marquee-track">
+
+                <span>
+                    DESIGN
+                </span>
+
+                <span>·</span>
+
+                <span>
+                    DEVELOP
+                </span>
+
+                <span>·</span>
+
+                <span>
+                    ITERATE
+                </span>
+
+                <span>·</span>
+
+                <span>
+                    DESIGN
+                </span>
+
+                <span>·</span>
+
+                <span>
+                    DEVELOP
+                </span>
+
+                <span>·</span>
+
+                <span>
+                    ITERATE
+                </span>
+
+                <span>·</span>
+
+                <span>
+                    DESIGN
+                </span>
+
+                <span>·</span>
+
+                <span>
+                    DEVELOP
+                </span>
+
+                <span>·</span>
+
+                <span>
+                    ITERATE
+                </span>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SELECTED WORK
+        ================================================== -->
+
+        <section
+            id="work"
+            class="work section">
+
+            <div class="container">
+
+
+                <!-- Section Header -->
+
+                <div class="section-header">
+
+
+                    <div>
+
+                        <p class="eyebrow">
+
+                            SELECTED WORK
+
+                        </p>
+
+                    </div>
+
+
+                    <div>
+
+                        <p class="section-intro">
+
+                            A selection of projects where I
+                            explored product thinking, user
+                            experience, interface design and
+                            frontend development.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     PROJECT 01 — LEDGERLY
+                ================================================== -->
+
+                <article
+                    class="project project-featured">
+
+
+                    <!-- Project Visual -->
 
                     <a
-                        href="https://designwithayu.github.io/Ledgerly-AI-based-Expense-Tracker/"
+                        href="https://github.com/designwithAYU/Ledgerly-AI-based-Expense-Tracker"
                         target="_blank"
-                        class="project-image project-pink">
+                        rel="noopener noreferrer"
+                        class="project-visual project-visual-pink"
+                        aria-label="View Ledgerly project">
 
                         <img
                             src="images/calculator.png"
-                            alt="Ledgerly AI Expense Tracker">
+                            alt="Ledgerly AI expense tracker interface">
 
-                        <span class="project-link">
-                            View project ↗
+                        <span class="project-overlay">
+
+                            View case study
+                            <span>↗</span>
+
                         </span>
 
                     </a>
 
 
-                    <div class="project-info">
+                    <!-- Project Information -->
 
-                        <div>
+                    <div class="project-information">
 
-                            <p class="project-category">
-                                01 / PRODUCT DESIGN
+
+                        <div class="project-title-block">
+
+                            <p class="project-number">
+
+                                01
+                                <span>/ PRODUCT DESIGN</span>
+
                             </p>
 
                             <h2>
                                 Ledgerly
                             </h2>
 
+                            <p class="project-subtitle">
+
+                                AI Expense Tracker
+
+                            </p>
+
                         </div>
 
-                        <p>
-                            An AI-powered expense tracking experience
-                            designed to make personal finance easier
-                            to understand and manage.
-                        </p>
+
+                        <div class="project-description">
+
+                            <p>
+
+                                An AI-powered expense tracking
+                                experience designed to make
+                                personal finance easier to
+                                understand and manage.
+
+                            </p>
+
+
+                            <div class="project-tags">
+
+                                <span>
+                                    UX Design
+                                </span>
+
+                                <span>
+                                    UI Design
+                                </span>
+
+                                <span>
+                                    Prototyping
+                                </span>
+
+                                <span>
+                                    Frontend
+                                </span>
+
+                            </div>
+
+
+                            <a
+                                href="https://github.com/designwithAYU/Ledgerly-AI-based-Expense-Tracker"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="project-link">
+
+                                View project
+                                <span>↗</span>
+
+                            </a>
+
+                        </div>
 
                     </div>
 
                 </article>
 
 
-                <!-- PROJECT 02 -->
 
-                <article class="project">
+                <!-- =================================================
+                     PROJECT 02 — MODL FORGE
+                ================================================== -->
+
+                <article
+                    class="project project-modl">
+
+
+                    <!-- Project Visual -->
 
                     <a
-                        href="https://designwithayu.github.io/weather-web/"
-                        target="_blank"
-                        class="project-image project-blue">
+                        href="#modl-forge-case-study"
+                        class="project-visual project-visual-lilac"
+                        aria-label="View Modl Forge case study">
 
-                        <img
-                            src="images/weather.png"
-                            alt="Weather App">
+                        <div class="project-placeholder">
 
-                        <span class="project-link">
-                            View project ↗
+                            <span>
+                                MODL FORGE
+                            </span>
+
+                            <small>
+                                AI DATASET PLATFORM
+                            </small>
+
+                        </div>
+
+
+                        <span class="project-overlay">
+
+                            View case study
+                            <span>↗</span>
+
                         </span>
 
                     </a>
 
 
-                    <div class="project-info">
+                    <!-- Project Information -->
 
-                        <div>
+                    <div class="project-information">
 
-                            <p class="project-category">
-                                02 / WEB DESIGN
+
+                        <div class="project-title-block">
+
+                            <p class="project-number">
+
+                                02
+                                <span>/ SAAS UX</span>
+
                             </p>
 
                             <h2>
-                                Weather App
+                                Modl Forge
                             </h2>
+
+                            <p class="project-subtitle">
+
+                                AI Dataset & Model Platform
+
+                            </p>
 
                         </div>
 
-                        <p>
-                            A responsive weather interface focused
-                            on clear information hierarchy and a
-                            straightforward user experience.
-                        </p>
+
+                        <div class="project-description">
+
+                            <p>
+
+                                A platform concept designed to
+                                simplify dataset preparation,
+                                quality analysis and machine
+                                learning model training.
+
+                            </p>
+
+
+                            <div class="project-tags">
+
+                                <span>
+                                    Product Design
+                                </span>
+
+                                <span>
+                                    SaaS UX
+                                </span>
+
+                                <span>
+                                    Dashboard Design
+                                </span>
+
+                                <span>
+                                    Information Architecture
+                                </span>
+
+                            </div>
+
+
+                            <a
+                                href="#modl-forge-case-study"
+                                class="project-link">
+
+                                View case study
+                                <span>↗</span>
+
+                            </a>
+
+                        </div>
 
                     </div>
 
                 </article>
 
 
-                <!-- PROJECT 03 -->
 
-                <article class="project">
+                <!-- =================================================
+                     PROJECT 03 — ZIVARA
+                ================================================== -->
+
+                <article
+                    class="project project-zivara">
+
+
+                    <!-- Project Visual -->
 
                     <a
-                        href="https://designwithayu.github.io/e-commerce/"
-                        target="_blank"
-                        class="project-image project-neutral">
+                        href="#zivara-case-study"
+                        class="project-visual project-visual-blue"
+                        aria-label="View Zivara case study">
 
-                        <img
-                            src="images/e-commerce.jpg"
-                            alt="E-commerce Website">
+                        <div class="project-placeholder">
 
-                        <span class="project-link">
-                            View project ↗
+                            <span>
+                                ZIVARA
+                            </span>
+
+                            <small>
+                                MOBILE UX
+                            </small>
+
+                        </div>
+
+
+                        <span class="project-overlay">
+
+                            View case study
+                            <span>↗</span>
+
                         </span>
 
                     </a>
 
 
-                    <div class="project-info">
+                    <!-- Project Information -->
 
-                        <div>
+                    <div class="project-information">
 
-                            <p class="project-category">
-                                03 / WEB DESIGN
+
+                        <div class="project-title-block">
+
+                            <p class="project-number">
+
+                                03
+                                <span>/ MOBILE UX</span>
+
                             </p>
 
                             <h2>
-                                E-commerce
+                                Zivara
                             </h2>
 
-                        </div>
+                            <p class="project-subtitle">
 
-                        <p>
-                            A responsive shopping interface designed
-                            around simple navigation, product discovery
-                            and clean visual hierarchy.
-                        </p>
+                                Mental Wellness App
 
-                    </div>
-
-                </article>
-
-
-                <!-- PROJECT 04 -->
-
-                <article class="project project-wide">
-
-                    <a
-                        href="https://designwithayu.github.io/portfolio/"
-                        target="_blank"
-                        class="project-image project-lilac">
-
-                        <img
-                            src="images/portfolio.png"
-                            alt="Previous Portfolio Website">
-
-                        <span class="project-link">
-                            View project ↗
-                        </span>
-
-                    </a>
-
-
-                    <div class="project-info">
-
-                        <div>
-
-                            <p class="project-category">
-                                04 / PERSONAL PROJECT
                             </p>
 
-                            <h2>
-                                Portfolio
-                            </h2>
-
                         </div>
 
-                        <p>
-                            My previous portfolio — redesigned into
-                            a more intentional UI/UX-focused experience.
-                        </p>
+
+                        <div class="project-description">
+
+                            <p>
+
+                                A mobile experience focused on
+                                making everyday wellness activities
+                                feel simple, approachable and
+                                accessible.
+
+                            </p>
+
+
+                            <div class="project-tags">
+
+                                <span>
+                                    Mobile UX
+                                </span>
+
+                                <span>
+                                    UI Design
+                                </span>
+
+                                <span>
+                                    User Journey
+                                </span>
+
+                                <span>
+                                    Prototyping
+                                </span>
+
+                            </div>
+
+
+                            <a
+                                href="#zivara-case-study"
+                                class="project-link">
+
+                                View case study
+                                <span>↗</span>
+
+                            </a>
+
+                        </div>
 
                     </div>
 
@@ -322,16 +734,206 @@
         </section>
 
 
-        <!-- ================= ABOUT ================= -->
 
-        <section id="about" class="about section">
+        <!-- =================================================
+             DESIGN PROCESS
+        ================================================== -->
+
+        <section
+            id="process"
+            class="process section">
+
+
+            <div class="container">
+
+
+                <!-- Process Header -->
+
+                <div class="section-header">
+
+                    <div>
+
+                        <p class="eyebrow">
+
+                            HOW I THINK
+
+                        </p>
+
+                    </div>
+
+
+                    <div>
+
+                        <p class="section-intro">
+
+                            I focus on understanding the problem
+                            before jumping into the interface.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Process Steps -->
+
+                <div class="process-list">
+
+
+                    <div class="process-item">
+
+                        <span class="process-number">
+                            01
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Understand
+                            </h3>
+
+                            <p>
+
+                                Understand the user, context
+                                and problem before deciding
+                                what to build.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="process-item">
+
+                        <span class="process-number">
+                            02
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Define
+                            </h3>
+
+                            <p>
+
+                                Identify the core pain points
+                                and prioritize what actually
+                                matters to the user.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="process-item">
+
+                        <span class="process-number">
+                            03
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Explore
+                            </h3>
+
+                            <p>
+
+                                Create user flows, wireframes
+                                and different possible solutions.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="process-item">
+
+                        <span class="process-number">
+                            04
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Design
+                            </h3>
+
+                            <p>
+
+                                Turn the strongest direction
+                                into a polished interface and
+                                interactive prototype.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="process-item">
+
+                        <span class="process-number">
+                            05
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Iterate
+                            </h3>
+
+                            <p>
+
+                                Refine the experience through
+                                feedback and continuous iteration.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             ABOUT
+        ================================================== -->
+
+        <section
+            id="about"
+            class="about section">
+
 
             <div class="container about-grid">
 
-                <div>
+
+                <div class="about-label">
 
                     <p class="eyebrow">
+
                         A LITTLE ABOUT ME
+
                     </p>
 
                 </div>
@@ -339,32 +941,46 @@
 
                 <div class="about-content">
 
+
                     <h2>
+
                         I like making digital products feel
                         <em>simple, useful and human.</em>
+
                     </h2>
 
+
                     <p>
+
                         I'm a Computer Science student exploring
                         UI/UX design and frontend development.
                         I enjoy taking an idea from rough structure
                         to a polished interface — thinking about
                         users, hierarchy, interaction and the small
                         details that make a product feel complete.
+
                     </p>
 
+
                     <p>
+
                         My toolkit includes Figma, HTML, CSS,
                         JavaScript, Bootstrap and React, with a
-                        growing interest in product design and
+                        growing interest in product thinking and
                         design systems.
+
                     </p>
+
 
                     <a
                         href="https://github.com/designwithAYU"
                         target="_blank"
+                        rel="noopener noreferrer"
                         class="text-link">
-                        See my GitHub ↗
+
+                        See my GitHub
+                        <span>↗</span>
+
                     </a>
 
                 </div>
@@ -374,103 +990,465 @@
         </section>
 
 
-        <!-- ================= SKILLS ================= -->
 
-        <section id="skills" class="skills container section">
+        <!-- =================================================
+             SKILLS
+        ================================================== -->
 
-            <div class="section-header">
-
-                <p class="eyebrow">
-                    WHAT I WORK WITH
-                </p>
-
-            </div>
+        <section
+            id="skills"
+            class="skills section">
 
 
-            <div class="skills-list">
+            <div class="container">
 
-                <span>UI / UX Design</span>
-                <span>Wireframing</span>
-                <span>Prototyping</span>
-                <span>Figma</span>
-                <span>Responsive Design</span>
-                <span>Design Systems</span>
-                <span>HTML & CSS</span>
-                <span>JavaScript</span>
-                <span>Bootstrap</span>
-                <span>React</span>
+
+                <div class="section-header">
+
+                    <div>
+
+                        <p class="eyebrow">
+
+                            WHAT I WORK WITH
+
+                        </p>
+
+                    </div>
+
+
+                    <div>
+
+                        <p class="section-intro">
+
+                            A combination of design thinking
+                            and frontend development.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="skills-grid">
+
+
+                    <!-- UX -->
+
+                    <div class="skill-category">
+
+                        <p class="skill-category-number">
+                            01
+                        </p>
+
+                        <h3>
+                            UX Design
+                        </h3>
+
+                        <ul>
+
+                            <li>User Flows</li>
+
+                            <li>Wireframing</li>
+
+                            <li>Information Architecture</li>
+
+                            <li>Prototyping</li>
+
+                            <li>Usability Thinking</li>
+
+                        </ul>
+
+                    </div>
+
+
+
+                    <!-- UI -->
+
+                    <div class="skill-category">
+
+                        <p class="skill-category-number">
+                            02
+                        </p>
+
+                        <h3>
+                            UI Design
+                        </h3>
+
+                        <ul>
+
+                            <li>Visual Design</li>
+
+                            <li>Typography</li>
+
+                            <li>Color</li>
+
+                            <li>Design Systems</li>
+
+                            <li>Responsive Design</li>
+
+                        </ul>
+
+                    </div>
+
+
+
+                    <!-- Development -->
+
+                    <div class="skill-category">
+
+                        <p class="skill-category-number">
+                            03
+                        </p>
+
+                        <h3>
+                            Development
+                        </h3>
+
+                        <ul>
+
+                            <li>HTML</li>
+
+                            <li>CSS</li>
+
+                            <li>JavaScript</li>
+
+                            <li>Bootstrap</li>
+
+                            <li>React</li>
+
+                        </ul>
+
+                    </div>
+
+
+
+                    <!-- Tools -->
+
+                    <div class="skill-category">
+
+                        <p class="skill-category-number">
+                            04
+                        </p>
+
+                        <h3>
+                            Tools
+                        </h3>
+
+                        <ul>
+
+                            <li>Figma</li>
+
+                            <li>Git</li>
+
+                            <li>GitHub</li>
+
+                            <li>VS Code</li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
 
             </div>
 
         </section>
 
 
-        <!-- ================= CONTACT ================= -->
 
-        <section id="contact" class="contact section">
+        <!-- =================================================
+             RESUME
+        ================================================== -->
 
-            <div class="container contact-content">
+        <section
+            id="resume"
+            class="resume section">
 
-                <p class="eyebrow">
-                    HAVE A PROJECT IN MIND?
-                </p>
 
-                <h2>
-                    Let's make something
-                    <br>
-                    <em>worth remembering.</em>
-                </h2>
+            <div class="container resume-container">
 
+
+                <div>
+
+                    <p class="eyebrow">
+                        WANT TO KNOW MORE?
+                    </p>
+
+                    <h2>
+
+                        Take a look at
+                        <em>my resume.</em>
+
+                    </h2>
+
+                </div>
+
+
+                <!--
+
+                    WHEN YOU UPLOAD YOUR RESUME:
+
+                    Replace:
+
+                    href="#"
+
+                    WITH:
+
+                    href="assets/Ayushi-Resume.pdf"
+
+                -->
 
                 <a
-                    href="mailto:your-email@example.com"
-                    class="contact-email">
+                    href="#"
+                    class="button button-dark">
 
-                    your-email@example.com
+                    Download resume
 
-                    <span>↗</span>
+                    <span>↓</span>
 
                 </a>
 
+            </div>
 
-                <div class="social-links">
+        </section>
 
-                    <a
-                        href="https://github.com/designwithAYU"
-                        target="_blank">
-                        GitHub
-                    </a>
 
-                    <a
-                        href="https://www.linkedin.com"
-                        target="_blank">
-                        LinkedIn
-                    </a>
+
+        <!-- =================================================
+             MODL FORGE CASE STUDY PREVIEW
+        ================================================== -->
+
+        <section
+            id="modl-forge-case-study"
+            class="case-study-preview section">
+
+
+            <div class="container">
+
+
+                <p class="eyebrow">
+                    CASE STUDY
+                </p>
+
+
+                <h2>
+                    Modl Forge
+                </h2>
+
+
+                <p class="case-study-intro">
+
+                    An AI dataset and model platform concept
+                    designed around a clearer workflow for
+                    dataset preparation, quality analysis
+                    and model training.
+
+                </p>
+
+
+                <div class="case-study-flow">
+
+                    <span>Dataset</span>
+
+                    <span>→</span>
+
+                    <span>Clean</span>
+
+                    <span>→</span>
+
+                    <span>Analyze</span>
+
+                    <span>→</span>
+
+                    <span>Train</span>
+
+                    <span>→</span>
+
+                    <span>Compare</span>
+
+                    <span>→</span>
+
+                    <span>Download</span>
 
                 </div>
 
             </div>
 
         </section>
+
+
+
+        <!-- =================================================
+             ZIVARA CASE STUDY PREVIEW
+        ================================================== -->
+
+        <section
+            id="zivara-case-study"
+            class="case-study-preview case-study-zivara section">
+
+
+            <div class="container">
+
+
+                <p class="eyebrow">
+                    CASE STUDY
+                </p>
+
+
+                <h2>
+                    Zivara
+                </h2>
+
+
+                <p class="case-study-intro">
+
+                    A mobile wellness experience focused on
+                    making everyday wellness activities feel
+                    simple, approachable and accessible.
+
+                </p>
+
+
+                <div class="case-study-flow">
+
+                    <span>Onboarding</span>
+
+                    <span>→</span>
+
+                    <span>Explore</span>
+
+                    <span>→</span>
+
+                    <span>Engage</span>
+
+                    <span>→</span>
+
+                    <span>Reflect</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
 
     </main>
 
 
-    <!-- ================= FOOTER ================= -->
 
-    <footer class="footer container">
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
 
-        <span>
-            © 2026 Ayushi
-        </span>
+    <footer class="footer">
 
-        <span>
-            Designed & built with curiosity.
-        </span>
+        <div class="container footer-container">
+
+            <span>
+                © 2026 Ayushi
+            </span>
+
+            <span>
+                Designed & built with curiosity.
+            </span>
+
+        </div>
 
     </footer>
 
+
 </div>
 
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script>
+
+    /*
+    ================================================
+    MOBILE NAVIGATION
+    ================================================
+    */
+
+    const menuToggle =
+        document.querySelector(".menu-toggle");
+
+    const mobileMenu =
+        document.querySelector(".mobile-menu");
+
+
+    if (menuToggle && mobileMenu) {
+
+        menuToggle.addEventListener("click", () => {
+
+            const isOpen =
+                menuToggle.classList.toggle("active");
+
+            mobileMenu.classList.toggle("active");
+
+            menuToggle.setAttribute(
+                "aria-expanded",
+                isOpen
+            );
+
+        });
+
+
+        /*
+        Close mobile menu after clicking a link
+        */
+
+        const mobileLinks =
+            mobileMenu.querySelectorAll("a");
+
+
+        mobileLinks.forEach(link => {
+
+            link.addEventListener("click", () => {
+
+                menuToggle.classList.remove("active");
+
+                mobileMenu.classList.remove("active");
+
+                menuToggle.setAttribute(
+                    "aria-expanded",
+                    "false"
+                );
+
+            });
+
+        });
+
+    }
+
+
+    /*
+    ================================================
+    REDUCED MOTION
+    ================================================
+    */
+
+    const prefersReducedMotion =
+        window.matchMedia(
+            "(prefers-reduced-motion: reduce)"
+        ).matches;
+
+
+    if (prefersReducedMotion) {
+
+        document.documentElement.style.scrollBehavior =
+            "auto";
+
+    }
+
+</script>
+
+
 </body>
+
 </html>
